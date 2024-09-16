@@ -88,7 +88,7 @@ CLASS zcl_etr_ledger_create DEFINITION
               wrbtr TYPE zetr_e_edf_dmbtr,
               dmbe3 TYPE zetr_e_edf_dmbtr,
               dmbe2 TYPE zetr_e_edf_dmbtr,
-              waers TYPE zetr_e_waers,
+              waers TYPE waers,
             END OF ty_bseg.
 
 
@@ -171,10 +171,10 @@ CLASS zcl_etr_ledger_create DEFINITION
               blart_t   TYPE zetr_e_edf_ledger_on_defin,
               oturu     TYPE zetr_e_payment_term,
               bldat     TYPE bldat,
-              cpudt     TYPE zetr_e_cpudt,
+              cpudt     TYPE budat,
               usnam     TYPE usnam,
               tcode     TYPE tcode,
-              xblnr     TYPE zetr_e_xblnr,
+              xblnr     TYPE xblnr,
               stblg     TYPE zetr_e_stblg,
               stjah     TYPE gjahr,
               bktxt     TYPE zetr_e_edf_bktxt,

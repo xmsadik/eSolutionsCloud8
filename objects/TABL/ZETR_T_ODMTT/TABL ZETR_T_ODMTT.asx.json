@@ -133,7 +133,7 @@
     "DATATYPE":"CHAR",
     "LENG":20,
     "DECIMALS":0,
-    "DOMNAME":"CHAR20",
+    "DOMNAME":"ZETR_D_PAYMENT_TERM",
     "SHLPORIGIN":"",
     "TABLETYPE":"",
     "DEPTH":0,

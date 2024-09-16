@@ -794,7 +794,7 @@
                                               AND belnr EQ ls_bkpf-belnr
                                               AND gjahr EQ ls_bkpf-gjahr
                                               AND boeno NE space.
-          ADD 1 TO lv_count.
+          lv_count += 1.
         ENDLOOP.
 
         IF lv_count EQ 1.

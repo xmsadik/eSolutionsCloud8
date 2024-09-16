@@ -7,7 +7,7 @@
     "ROLLNAME":"ZETR_E_ACCOUNT_CODE",
     "AS4LOCAL":"L",
     "AS4VERS":0,
-    "DOMNAME":"CHAR4",
+    "DOMNAME":"ZETR_D_ACCOUNT_CODE",
     "ROUTPUTLEN":0,
     "MEMORYID":"",
     "LOGFLAG":"",

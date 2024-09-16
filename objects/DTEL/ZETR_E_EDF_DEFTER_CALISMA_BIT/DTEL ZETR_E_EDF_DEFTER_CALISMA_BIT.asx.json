@@ -4,10 +4,10 @@
   "data":
   [
    {
-    "ROLLNAME":"ZETR_E_CPUDT",
+    "ROLLNAME":"ZETR_E_EDF_DEFTER_CALISMA_BIT",
     "AS4LOCAL":"L",
     "AS4VERS":0,
-    "DOMNAME":"DATUM",
+    "DOMNAME":"ABAP_BOOLEAN",
     "ROUTPUTLEN":0,
     "MEMORYID":"",
     "LOGFLAG":"",
@@ -27,14 +27,14 @@
     "SHLPNAME":"",
     "SHLPFIELD":"",
     "DEFFDNAME":"",
-    "DATATYPE":"DATS",
-    "LENG":8,
+    "DATATYPE":"CHAR",
+    "LENG":1,
     "DECIMALS":0,
-    "OUTPUTLEN":10,
+    "OUTPUTLEN":1,
     "LOWERCASE":"",
     "SIGNFLAG":"",
     "CONVEXIT":"",
-    "VALEXI":"",
+    "VALEXI":"X",
     "ENTITYTAB":"",
     "REFKIND":"D",
     "REFTYPE":"",
@@ -51,26 +51,15 @@
   "data":
   [
    {
-    "ROLLNAME":"ZETR_E_CPUDT",
+    "ROLLNAME":"ZETR_E_EDF_DEFTER_CALISMA_BIT",
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
     "AS4VERS":0,
-    "DDTEXT":"Entry Date",
-    "REPTEXT":"Entry Date",
-    "SCRTEXT_S":"Entry Date",
-    "SCRTEXT_M":"Entry Date",
-    "SCRTEXT_L":"Entry Date"
-   },
-   {
-    "ROLLNAME":"ZETR_E_CPUDT",
-    "DDLANGUAGE":"T",
-    "AS4LOCAL":"N",
-    "AS4VERS":0,
-    "DDTEXT":"Giriş tarihi",
-    "REPTEXT":"Giriş tarihi",
-    "SCRTEXT_S":"Giriş tar.",
-    "SCRTEXT_M":"Giriş tarihi",
-    "SCRTEXT_L":"Giriş tarihi"
+    "DDTEXT":"Defter Çalışma Bitti",
+    "REPTEXT":"Defter Çalışma Bitti",
+    "SCRTEXT_S":"Defter Çal",
+    "SCRTEXT_M":"Defter Çalışma Bitti",
+    "SCRTEXT_L":"Defter Çalışma Bitti"
    }
   ]
  },
@@ -79,7 +68,7 @@
   "data":
   [
    {
-    "TYPENAME":"ZETR_E_CPUDT",
+    "TYPENAME":"ZETR_E_EDF_DEFTER_CALISMA_BIT",
     "STATE":"N",
     "TYPEKIND":"DTEL"
    }
@@ -92,7 +81,7 @@
    {
     "PGMID":"R3TR",
     "OBJECT":"DTEL",
-    "OBJ_NAME":"ZETR_E_CPUDT",
+    "OBJ_NAME":"ZETR_E_EDF_DEFTER_CALISMA_BIT",
     "KORRNUM":"",
     "SRCSYSTEM":"...",
     "AUTHOR":"SAP_CUSTOMER",
@@ -109,8 +98,8 @@
     "CRELEASE":"",
     "DELFLAG":"",
     "TRANSLTTXT":"",
-    "CREATED_ON":"2024-07-30",
-    "CHECK_DATE":"2024-07-30",
+    "CREATED_ON":"2024-09-13",
+    "CHECK_DATE":"2024-09-13",
     "CHECK_CFG":""
    }
   ]

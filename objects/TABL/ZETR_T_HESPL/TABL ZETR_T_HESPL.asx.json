@@ -166,7 +166,7 @@
     "DATATYPE":"CHAR",
     "LENG":4,
     "DECIMALS":0,
-    "DOMNAME":"CHAR4",
+    "DOMNAME":"ZETR_D_ACCOUNT_CODE",
     "SHLPORIGIN":"",
     "TABLETYPE":"",
     "DEPTH":0,
