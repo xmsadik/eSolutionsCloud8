@@ -18,6 +18,7 @@ CLASS lhc_DeleteEntries IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD read.
+    CHECK sy-subrc = 0.
   ENDMETHOD.
 
   METHOD lock.
@@ -49,6 +50,7 @@ CLASS lsc_ZETR_DDL_I_DELETE_TABLES IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD save.
+    CHECK sy-subrc = 0.
   ENDMETHOD.
 
   METHOD cleanup.

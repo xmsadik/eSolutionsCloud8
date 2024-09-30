@@ -256,8 +256,8 @@ CLASS zcl_etr_outgoing_invoice DEFINITION
     TYPES tax_office TYPE zetr_e_tax_office.
     TYPES texts TYPE SORTED TABLE OF mty_texts WITH UNIQUE KEY tdobject tdid tdspras tdname.
     TYPES conditions TYPE SORTED TABLE OF zetr_t_inv_cond WITH UNIQUE KEY kschl
-                                                          WITH NON-UNIQUE SORTED KEY by_cndty COMPONENTS cndty
-                                                          WITH NON-UNIQUE SORTED KEY by_kschl COMPONENTS kschl cndty.
+                                                          WITH NON-UNIQUE SORTED KEY by_cndty COMPONENTS cndty.
+*                                                          WITH NON-UNIQUE SORTED KEY by_kschl COMPONENTS cndty kschl.
     TYPES END OF mty_billing_data .
 
     TYPES BEGIN OF mty_export_spec_data.

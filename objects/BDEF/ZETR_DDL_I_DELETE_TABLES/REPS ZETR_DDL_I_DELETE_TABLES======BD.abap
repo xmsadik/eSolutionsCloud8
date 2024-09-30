@@ -10,5 +10,5 @@ authorization master ( instance )
   field ( readonly : update ) docui;
   //  create;
   //  update;
-  //  delete;
+//    delete;
 }

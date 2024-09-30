@@ -88,7 +88,7 @@
     "KEYFLAG":"X",
     "MANDATORY":"",
     "ROLLNAME":"BUKRS",
-    "CHECKTABLE":"ZETR_T_CMPIN",
+    "CHECKTABLE":"",
     "ADMINFIELD":"0",
     "INTTYPE":"C",
     "INTLEN":8,
@@ -101,7 +101,7 @@
     "LENG":4,
     "DECIMALS":0,
     "DOMNAME":"BUKRS",
-    "SHLPORIGIN":"P",
+    "SHLPORIGIN":"D",
     "TABLETYPE":"",
     "DEPTH":0,
     "COMPTYPE":"E",
@@ -214,69 +214,6 @@
   ]
  },
  {
-  "table":"DD05S",
-  "data":
-  [
-   {
-    "TABNAME":"ZETR_T_REFCL",
-    "FIELDNAME":"BUKRS",
-    "PRIMPOS":1,
-    "AS4LOCAL":"N",
-    "AS4VERS":0,
-    "FORTABLE":"ZETR_T_REFCL",
-    "FORKEY":"MANDT",
-    "FORSTRING":""
-   },
-   {
-    "TABNAME":"ZETR_T_REFCL",
-    "FIELDNAME":"BUKRS",
-    "PRIMPOS":2,
-    "AS4LOCAL":"N",
-    "AS4VERS":0,
-    "FORTABLE":"ZETR_T_REFCL",
-    "FORKEY":"BUKRS",
-    "FORSTRING":""
-   }
-  ]
- },
- {
-  "table":"DD08L",
-  "data":
-  [
-   {
-    "TABNAME":"ZETR_T_REFCL",
-    "FIELDNAME":"BUKRS",
-    "AS4LOCAL":"N",
-    "AS4VERS":0,
-    "CHECKTABLE":"ZETR_T_CMPIN",
-    "FRKART":"",
-    "CLASFIELD":"",
-    "CLASVALUE":"",
-    "CARDLEFT":"",
-    "CARD":"",
-    "CHECKFLAG":"",
-    "ARBGB":"",
-    "MSGNR":"",
-    "NOINHERIT":""
-   }
-  ]
- },
- {
-  "table":"DD08T",
-  "data":
-  [
-   {
-    "TABNAME":"ZETR_T_REFCL",
-    "FIELDNAME":"BUKRS",
-    "DDLANGUAGE":"E",
-    "AS4LOCAL":"N",
-    "AS4VERS":0,
-    "DDTEXT":"",
-    "MESTEXT":""
-   }
-  ]
- },
- {
   "table":"DD09L",
   "data":
   [
@@ -288,7 +225,7 @@
     "TABART":"APPL0",
     "PUFFERUNG":"G",
     "SCHFELDANZ":2,
-    "PROTOKOLL":"X",
+    "PROTOKOLL":"",
     "SPEICHPUFF":"",
     "AS4USER":"SAP_CUSTOMER",
     "AS4DATE":"0000-00-00",

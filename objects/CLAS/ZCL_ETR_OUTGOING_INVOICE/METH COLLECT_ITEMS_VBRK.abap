@@ -41,9 +41,10 @@
                                                                      AND koaid = 'A'
                                                                      AND kinak = space.
         READ TABLE ms_billing_data-conditions
-          WITH TABLE KEY by_kschl
+          WITH TABLE KEY primary_key
+*          WITH TABLE KEY by_kschl
           COMPONENTS kschl = ls_konv-kschl
-                     cndty = 'D'
+*                     cndty = 'D'
           TRANSPORTING NO FIELDS.
         CHECK sy-subrc EQ 0.
         CLEAR ls_item_allowance.

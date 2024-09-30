@@ -6,6 +6,7 @@
         !iv_document_uid   TYPE sysuuid_c22
         !iv_content_type   TYPE zetr_e_dctyp
         !iv_document_ubl   TYPE xstring
+        !iv_xsltt          TYPE zetr_e_xsltt
       RETURNING
         VALUE(rv_document) TYPE xstring
       RAISING

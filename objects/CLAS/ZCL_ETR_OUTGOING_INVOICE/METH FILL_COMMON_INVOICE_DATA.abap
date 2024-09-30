@@ -32,7 +32,14 @@
         RAISE EXCEPTION TYPE zcx_etr_regulative_exception
           MESSAGE e029(zetr_common).
       ENDIF.
-      generate_invoice_id( ).
+      TRY.
+          generate_invoice_id( ).
+        CATCH cx_number_ranges INTO DATA(lx_number_ranges).
+          DATA(lv_message) = CONV bapi_msg( lx_number_ranges->get_text( ) ).
+          RAISE EXCEPTION TYPE zcx_etr_regulative_exception
+            MESSAGE ID 'ZETR_COMMON' TYPE 'E' NUMBER '000'
+              WITH lv_message(50) lv_message+50(50) lv_message+100(50) lv_message+150(*).
+      ENDTRY.
       ms_invoice_ubl-id-content = ms_document-invno.
     ELSEIF mv_generate_invoice_id IS NOT INITIAL AND ms_document-invno IS NOT INITIAL.
       ms_invoice_ubl-id-content = ms_document-invno.

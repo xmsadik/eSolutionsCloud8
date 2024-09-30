@@ -56,10 +56,10 @@
     "AS4LOCAL":"N",
     "AS4VERS":0,
     "DDTEXT":"Debit",
-    "REPTEXT":"Debit",
-    "SCRTEXT_S":"Debit",
-    "SCRTEXT_M":"Debit",
-    "SCRTEXT_L":"Debit"
+    "REPTEXT":"Debit Amount",
+    "SCRTEXT_S":"Debit Amn.",
+    "SCRTEXT_M":"Debit Amount",
+    "SCRTEXT_L":"Debit Amount"
    }
   ]
  },

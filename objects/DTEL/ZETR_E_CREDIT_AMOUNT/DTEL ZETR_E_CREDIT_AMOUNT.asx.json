@@ -56,10 +56,10 @@
     "AS4LOCAL":"N",
     "AS4VERS":0,
     "DDTEXT":"Credit",
-    "REPTEXT":"Credit",
-    "SCRTEXT_S":"Credit",
-    "SCRTEXT_M":"Credit",
-    "SCRTEXT_L":"Credit"
+    "REPTEXT":"Credit Amount",
+    "SCRTEXT_S":"Credit Amn",
+    "SCRTEXT_M":"Credit Amount",
+    "SCRTEXT_L":"Credit Amount"
    }
   ]
  },

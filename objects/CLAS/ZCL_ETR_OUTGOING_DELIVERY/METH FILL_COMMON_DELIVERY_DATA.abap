@@ -41,7 +41,14 @@
         RAISE EXCEPTION TYPE zcx_etr_regulative_exception
           MESSAGE e029(zetr_common).
       ENDIF.
-      generate_delivery_id( ).
+      TRY.
+          generate_delivery_id( ).
+        CATCH cx_number_ranges INTO DATA(lx_number_ranges).
+          DATA(lv_message) = CONV bapi_msg( lx_number_ranges->get_text( ) ).
+          RAISE EXCEPTION TYPE zcx_etr_regulative_exception
+            MESSAGE ID 'ZETR_COMMON' TYPE 'E' NUMBER '000'
+              WITH lv_message(50) lv_message+50(50) lv_message+100(50) lv_message+150(*).
+      ENDTRY.
       ms_delivery_ubl-id-content = ms_document-dlvno.
     ELSEIF ms_company_parameters-genid IS NOT INITIAL AND ms_document-dlvno IS NOT INITIAL.
       ms_delivery_ubl-id-content = ms_document-dlvno.

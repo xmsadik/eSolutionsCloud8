@@ -30,9 +30,26 @@
             WHEN 'UBL'.
               rv_document = lv_invoice_ubl.
             WHEN OTHERS.
+              IF ls_document-xsltt IS INITIAL.
+                CASE ls_document-prfid.
+                  WHEN 'EARSIV'.
+                    SELECT SINGLE xsltt
+                      FROM zetr_t_eaxslt
+                      WHERE bukrs = @ls_document-bukrs
+                        AND deflt = @abap_true
+                      INTO @ls_document-xsltt.
+                  WHEN OTHERS.
+                    SELECT SINGLE xsltt
+                      FROM zetr_t_eixslt
+                      WHERE bukrs = @ls_document-bukrs
+                        AND deflt = @abap_true
+                      INTO @ls_document-xsltt.
+                ENDCASE.
+              ENDIF.
               rv_document = outgoing_invoice_preview( iv_document_uid = iv_document_uid
                                                       iv_content_type = iv_content_type
-                                                      iv_document_ubl = lv_invoice_ubl ).
+                                                      iv_document_ubl = lv_invoice_ubl
+                                                      iv_xsltt        = ls_document-xsltt ).
           ENDCASE.
         WHEN OTHERS.
           CASE ls_document-prfid.
